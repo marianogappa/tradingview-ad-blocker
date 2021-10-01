@@ -1,0 +1,15 @@
+{
+  "name": "TradingView ad blocker",
+  "description": "Removes the ad that shows up on bottom left on TradingView charts",
+  "version": "1.0",
+  "manifest_version": 3,
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.tradingview.com/chart/*"
+      ],
+      "all_frames": true,
+      "js": ["content-script.js"]
+    }
+  ]
+}
